@@ -1,0 +1,32 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+}
+
+#puzzle-container {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.tile {
+  background: #4caf50;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+}
+
+.tile.empty {
+  background: white;
+  color: transparent;
+  cursor: default;
+}
